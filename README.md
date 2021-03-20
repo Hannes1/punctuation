@@ -19,9 +19,8 @@ The optimization of hyper parameters:
 pip install parameter-sherpa
 pip install keras
 ```
-
 ## Data preparation
-For the initial data requirements see **[github.com/ottokart/punctuator2](https://github.com/ottokart/punctuator2)**. You can configure punctuation and vocabulary size in the [tensorflow/data/data.py](tensorflow/data/data.py). To prepare the data for the training:
+For the initial data requirements see [run.sh](./run.sh) then you can give the produced ./out dir as <data_dir> argument to data.py script for conversion. You can configure punctuation and vocabulary size in the [tensorflow/data/data.py](tensorflow/data/data.py). To prepare the data for the training:
 ```bash
 python tensorflow/punctuator2/data.py <initialDataDir> <dataDir>
 ```
