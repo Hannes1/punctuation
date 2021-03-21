@@ -2,7 +2,7 @@
 rm -rf ./out
 echo "Step 1/3"
 mkdir ./out
-grep -v " '[^ ]" /content/txt/en/*.txt | \
+grep -v " '[^ ]" /content/new.txt | \
 grep -v \'\ s\   | \
 grep -v \'\ ll\  | \
 grep -v \'\ ve\  | \
