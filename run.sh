@@ -1,8 +1,8 @@
-wget -qO- https://www.statmt.org/europarl/v7/europarl.tgz | tar xvz
+#wget -qO- https://www.statmt.org/europarl/v7/europarl.tgz | tar xvz
 rm -rf ./out
 echo "Step 1/3"
 mkdir ./out
-grep -v " '[^ ]" ./training-monolingual-europarl/europarl-v7.en | \
+grep -v " '[^ ]" /content/txt/en/*.txt | \
 grep -v \'\ s\   | \
 grep -v \'\ ll\  | \
 grep -v \'\ ve\  | \
