@@ -25,6 +25,7 @@ print('Input name  :', m.input.name )
 print('Output name :', m.output.name )
 print('========================================================')
 
-keras.experimental.export_saved_model(m, out_dir)
+tf.compat.v1.keras.experimental.export_saved_model(m,out_dir)
+#keras.experimental.export_saved_model(m, out_dir)
 print('==============DONE =====================================')
 print('========================================================')
